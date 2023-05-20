@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Information</title>
+        <link rel="stylesheet" href="person.css">
+    </head>
+
+    <body>
+        <form action="" method="post">
+            <div class="container">
+                <div class="row r1">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" required placeholder="Enter your first name">
+
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="lastname" required placeholder="Enter your last name">
+                </div>
+                <div class="row r1">
+                    <label for="dadname"></label>
+                    <input type="text" id="dadname" name="dadname" required placeholder="Enter your father's name">
+
+                    <label for="momname"></label>
+                    <input type="text" id="momname" name="momname" required placeholder="Enter your mother's name">
+                </div>
+                <div class="rowr2">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email">
+
+                    <label for="mobile"></label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile number">
+                </div>
+
+                <div class="row r3">
+                    <label for="gender" required>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" />Male
+                    <input type="radio" id="female" name="gender" value="female" />Female
+                </div>
+
+                <div class="row r4">
+                    <label for="dob">Date Of Birth:</label>
+                    <input type="Date" id="dob" required name="dob">
+
+                    <label for="blood group" required>Blood Group:</label>
+                    <select name="blood group" id="blood group">
+                        <option value=" ">Select Blood Group:</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB-">AB-</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+
+                    </select>
+                </div>
+                <div class="row r5">
+                    <label for="weight"></label>
+                    <input type="number" id="weight" required maxlength="3" name="weight"
+                        placeholder="Enter weight(in Kg)">
+
+                    <label for="height"></label>
+                    <input type="number" id="height" required name="height" maxlength="3"
+                        placeholder="Enter height(in Cm)">
+                </div>
+
+
+
+                <div class="row r6">
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="3" required maxlength="150"></textarea>
+                </div>
+
+
+                <div class="row r7">
+                    <label for="qualification" required>Qualification:</label>
+                    <select name="qualification" id="qualification">
+                        <option value=" ">--Select Qualification--</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="BTech.">BTech.</option>
+                        <option value="MTech.">MTech.</option>
+                        <option value="MCA">MCA</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+
+
+                </div>
+
+
+
+                <div class="row r9">
+                    <label for="hobbies">Hobbies:</label>
+                    <input type="text" id="hobbies" name="hobbies" placeholder="write your Hobbies">
+                </div>
+
+                <div class="row r10 ">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </body>
+
+</html>
